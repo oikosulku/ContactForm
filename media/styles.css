@@ -1,0 +1,89 @@
+
+html {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #fff;
+    color: #333;
+    font-family: 'Open Sans', sans-serif;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+
+.contact-form { 
+    text-align: left;
+ 
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px dotted #ccc;
+    border-radius: 3px;
+    position: relative;
+}
+
+.contact-form input.validation-error,
+.contact-form textarea.validation-error {
+    border: 1px solid #ca6702;
+    box-shadow: 0px 0px 3px 0px #ca6702;
+}
+.contact-form input.validation-ok,
+.contact-form textarea.validation-ok {
+    border: 1px solid #0a9396;
+    box-shadow: 0px 0px 3px 0px #0a9396;
+}
+
+
+.contact-form label {
+    width: 100%;
+    display: block;
+    padding: 5px;
+    margin: 10px 0 5px;
+    
+}
+
+.contact-form .frm-button {
+    width: 100%;
+    text-align: right;
+}
+
+.contact-form button {
+    padding: 8px 15px;
+    background: #0a9396;
+    color: #fff;
+    border: 1px dotted #ccc;
+    border-radius: 3px;
+    transition: all 200ms ease-in-out;
+}
+
+.contact-form button:hover {
+    background: #015557;
+    cursor: pointer;
+    box-shadow: 0.5em 0.5em 0.5em -0.4em #333;
+}
+.contact-form .show-err-msg {
+    font-weight: bold;
+    color: #ca6702;
+    margin: 0;
+    padding: 5px 8px;
+}
+.contact-form .valid {
+    color: #0a9396;
+}
+
+contact-form textarea:focus, contact-form input:focus{
+    outline: none;
+}
+*:focus {
+    outline: none;
+}
